@@ -47,7 +47,7 @@ elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Schedule SMS 
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.scheduleMessage('300XXXXXXXXX','message','YYYY-mm-dd hh:mm',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -58,18 +58,18 @@ elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Show Delivery
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.showDelivery(deliverId,function(err,data){	
 	if (!err){
-		console.log(data);
+	   console.log(data);
 	}else{
-		console.log(err.message);
+	   console.log(err.message);
 	}
 });
 ```
 
 ### List Scheduled SMS Messages
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.listSchedules(function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -80,7 +80,7 @@ elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Cancel Scheduled SMS Message
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.cancelSchedule(scheduleId,function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -91,7 +91,7 @@ elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### List Users
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.showUsers(function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -101,7 +101,7 @@ elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){
 ```
 ### Show User
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.showUser(userId,function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -112,7 +112,7 @@ elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Show Account
 ```javascript
-elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.showAccount(function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
