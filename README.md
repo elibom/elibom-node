@@ -91,7 +91,7 @@ elibomClient.cancelSchedule(scheduleId,function(err,data){
 
 ### List Users
 ```javascript
-elibomClient.showUsers(,function(err,data){	
+elibomClient.showUsers(function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
