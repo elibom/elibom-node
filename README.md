@@ -15,9 +15,7 @@ npm install elibom
 
 2\. Configure the `ElibomClient` object passing your credentials.
 ```javascript
-var elibomClient = require('elibom')
-
-client = new ElibomClient({user:'user@domain.com',password:'apiPassword'});
+var elibomClient = require('elibom')({user:'user@domain.com',password:'apiPassword'})
 
 ```
 *Note*: You can find your api password at http://www.elibom.com/api-password (make sure you are logged in).
@@ -38,7 +36,7 @@ You are now ready to start calling the API methods!
 
 ### Send SMS
 ```javascript
-client.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -49,7 +47,7 @@ client.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Schedule SMS 
 ```javascript
-client.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -60,7 +58,7 @@ client.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Show Delivery
 ```javascript
-client.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -71,7 +69,7 @@ client.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### List Scheduled SMS Messages
 ```javascript
-client.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -82,7 +80,7 @@ client.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### Cancel Scheduled SMS Message
 ```javascript
-client.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -93,7 +91,7 @@ client.sendMessage('300XXXXXXXXX','message',function(err,data){
 
 ### List Users
 ```javascript
-client.sendMessage('300XXXXXXXXX','message',function(err,data){	
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
 	if (!err){
 		console.log(data);
 	}else{
@@ -102,11 +100,23 @@ client.sendMessage('300XXXXXXXXX','message',function(err,data){
 });
 ```
 ### Show User
-```python
-user = elibom.show_user(usersId)
+```javascript
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+	if (!err){
+		console.log(data);
+	}else{
+		console.log(err.message);
+	}
+});
 ```
 
 ### Show Account
-```python
-account = elibom.show_account()
+```javascript
+elibomClient.sendMessage('300XXXXXXXXX','message',function(err,data){	
+	if (!err){
+		console.log(data);
+	}else{
+		console.log(err.message);
+	}
+});
 ```
