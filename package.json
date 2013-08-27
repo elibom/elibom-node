@@ -3,20 +3,17 @@
   "version": "0.1.0",
   "author": "Alejandro Riveros Cruz <lariverosc@gmail.com>",
   "description": "A node client for Elibom.com rest API",
-  "main": "./lib/Elibom"
+  "main": "./lib/Elibom",
   "repository": {
     "type": "git",
     "url": "https://github.com/elibom/elibom-node"
   },
-  "keywords": [
+  "keywords":[
     "elibom",
     "rest",
     "api",
     "client"
   ],
-  "dependencies" : {
-    "http"   :  "*",
-  },
   "analyze": false,
   "engines": {
     "node": ">=10.15"
