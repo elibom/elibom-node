@@ -15,7 +15,7 @@ npm install elibom
 
 2\. Configure the `ElibomClient` object passing your credentials.
 ```javascript
-var elibomClient = require('elibom')({user:'user@domain.com',password:'apiPassword'})
+var elibomClient = require('elibom')('user@domain.com','apiPassword')
 
 ```
 *Note*: You can find your api password at http://www.elibom.com/api-password (make sure you are logged in).
