@@ -1,6 +1,6 @@
 {
   "name": "elibom",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "Alejandro Riveros Cruz <lariverosc@gmail.com>",
   "description": "A node client for Elibom.com rest API",
   "main": "./lib/Elibom",
